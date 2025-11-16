@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-Object DirectoryName, Name)",
+      "Bash(Format-Table -GroupBy DirectoryName)",
+      "Bash(Remove-Item -Recurse -Force \"data\\backup_test_results\" 2)",
+      "Bash($null)",
+      "Bash(Remove-Item -Recurse -Force \"data\\tenvad_segments\" 2)",
+      "Bash(Remove-Item -Recurse -Force \"data\\verified_clean\" 2)",
+      "Bash(Remove-Item -Recurse -Force \"scripts\\phase3\" 2)",
+      "Bash(Remove-Item -Force \"nul\" 2)",
+      "Bash(Remove-Item -Force \"auto_segment.ps1\" 2)",
+      "Bash(Remove-Item -Force \"filter_overlap.ps1\" 2)",
+      "Bash(Remove-Item -Force \"final_config.ps1\" 2)",
+      "Bash(Remove-Item -Force \"quick_test.ps1\" 2)",
+      "Bash(Remove-Item -Force \"scripts\\compare_modes.py\" 2)",
+      "Bash(Remove-Item -Recurse -Force \"scripts\\phase1\" 2)",
+      "Bash(Remove-Item -Force \"docs\\phase1_manual_guide.md\" 2)",
+      "Bash(Remove-Item -Force \"docs\\phase2_guide.md\" 2)",
+      "Bash(Write-Host \"Deletion completed\")",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(Get-ChildItem -Path . -Recurse -Depth 2)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
